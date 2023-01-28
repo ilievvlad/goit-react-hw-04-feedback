@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import { Button, List } from "./FeedbackOptions.styled";
 
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
-	const optionsArray = Object.keys(options);
+	const optionsArr = Object.keys(options);
 
 	return (
 		<List>
-			{optionsArray.map(option => {
+			{optionsArr.map(option => {
 				const btnName = option[0].toUpperCase() + option.slice(1);
 
 				return (
